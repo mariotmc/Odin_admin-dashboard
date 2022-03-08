@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/Odin_admin-dashboard/static/css/main.38826091.css",
+    "main.js": "/Odin_admin-dashboard/static/js/main.f16ed5cd.js",
+    "static/media/user-logo.png": "/Odin_admin-dashboard/static/media/user-logo.a07cfce663b0e4718994.png",
+    "static/media/user.png": "/Odin_admin-dashboard/static/media/user.724b79cd582c0a0944ee.png",
+    "index.html": "/Odin_admin-dashboard/index.html",
+    "main.38826091.css.map": "/Odin_admin-dashboard/static/css/main.38826091.css.map",
+    "main.f16ed5cd.js.map": "/Odin_admin-dashboard/static/js/main.f16ed5cd.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.38826091.css",
+    "static/js/main.f16ed5cd.js"
+  ]
+}
