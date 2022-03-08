@@ -1,0 +1,138 @@
+@use "functions" as *;
+@use "variables" as *;
+
+.dashboard {
+  display: flex;
+  flex-grow: 1;
+  gap: rem(22);
+  padding: rem(40) rem(35) rem(65) rem(20);
+  background-color: var(--light-blue);
+
+  .projects-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: rem(20) repeat(3, 1fr);
+    gap: rem(30) rem(25);
+    width: 74%;
+
+    h2 {
+      grid-column: 1 / -1;
+    }
+
+    .project {
+      padding: rem(25);
+      background-color: var(--white);
+      border-radius: rem(8);
+      border-left: rem(8) solid var(--yellow);
+
+      h3 {
+        margin-bottom: rem(10);
+        font-size: rem(15);
+        font-weight: 700;
+      }
+
+      p {
+        margin-bottom: rem(25);
+        color: var(--light-gray);
+        font-size: rem(13);
+        line-height: 1.2;
+      }
+
+      svg {
+        width: rem(22);
+        height: rem(22);
+      }
+
+      &-icon-container {
+        display: flex;
+        justify-content: flex-end;
+        gap: rem(30);
+
+        svg {
+          cursor: pointer;
+        }
+      }
+    }
+  }
+
+  .announcements-trends-container {
+    width: 26%;
+
+    .announcements-container,
+    .trending-container {
+      h2 {
+        margin-bottom: rem(30);
+      }
+    }
+
+    .announcements-container {
+      width: rem(278);
+      height: rem(325);
+      margin-bottom: rem(40);
+
+      .items-container {
+        align-items: center;
+        padding: rem(30);
+
+        .announcement:nth-child(2) {
+          padding: rem(10) 0;
+          border-top: 1px solid rgb(210, 210, 210);
+          border-bottom: 1px solid rgb(210, 210, 210);
+        }
+
+        h3 {
+          margin-bottom: rem(5);
+          font-size: rem(14);
+          font-weight: 700;
+        }
+
+        p {
+          color: var(--light-gray);
+          font-size: rem(12);
+          line-height: 1.4;
+        }
+      }
+    }
+
+    .trending-container {
+      width: rem(278);
+      height: rem(316);
+
+      .trend {
+        display: flex;
+        align-items: center;
+        margin-left: rem(23);
+
+        img {
+          width: rem(45);
+          height: rem(45);
+          margin-right: rem(10);
+        }
+
+        h3 {
+          margin-bottom: rem(3);
+          font-size: rem(14);
+          font-weight: 700;
+        }
+
+        p {
+          color: var(--light-gray);
+          font-size: rem(12);
+        }
+      }
+    }
+
+    .items-container {
+      display: grid;
+      grid-template-rows: auto;
+      height: calc(100% - rem(48));
+      background-color: var(--white);
+      border-radius: rem(8);
+    }
+  }
+
+  .dashboard-heading {
+    font-size: rem(18);
+    font-weight: 700;
+  }
+}

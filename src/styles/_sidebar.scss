@@ -1,0 +1,46 @@
+@use "functions" as *;
+@use "variables" as *;
+
+.sidebar {
+  min-width: rem(210);
+  width: 21%;
+  height: 100%;
+  color: var(--white);
+  background-color: var(--blue);
+  font-size: rem(18);
+  font-weight: 700;
+
+  nav {
+    margin: rem(23) 0 0 rem(23);
+  }
+
+  .logo {
+    width: rem(50);
+    height: rem(50);
+  }
+
+  .logo-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: rem(60);
+
+    span {
+      margin-left: rem(6);
+      font-size: rem(23);
+    }
+  }
+
+  .nav-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: rem(33);
+    cursor: pointer;
+
+    svg {
+      width: rem(22);
+      height: rem(22);
+      margin-right: rem(25);
+      fill: var(--white);
+    }
+  }
+}
